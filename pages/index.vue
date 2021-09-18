@@ -1,27 +1,26 @@
 <template>
-    <div class="content-container">
-        <div class="section">
-            <h1>Ryan Sheppard</h1>
-            <p>I'm a highly motivated software developer who understands collaboration. <b>I'm not afraid to speak my mind when I'm subject to something that could be done better</b>.</p>
-        </div>
+    <div id="about-page">
+        <section>
+            <div class="content-container">
+                <h1>Ryan Sheppard</h1>
+                <p>I'm a highly motivated software developer who understands collaboration. <b>I'm not afraid to speak my mind when I'm subject to something that could be done better</b>.</p>
+            </div>
+        </section>
     </div>
 </template>
 
 <style scoped>
-.content-container {
+#about-page {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
-.section {
+section {
     width: 60%;
     height: 80vh;
-    margin: 10px;
-    
     display: flex;
-    justify-content: center;
-    align-items: center; 
-    flex-direction: column;
 }
 
 h1 {
