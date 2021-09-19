@@ -29,6 +29,12 @@
 a {
     display: flex;
     width: 12.5%;
+
+    transition: opacity .2s linear;
+}
+
+a:hover {
+    opacity: 0.5;
 }
 
 img {
