@@ -15,7 +15,7 @@
         <section>
             <div id="about-section" class="content-container">
                 <div>
-                    <h3>Start building a dev team that fights about the health of your codebase</h3>
+                    <h3>Start building a dev team that fights for the health of your codebase</h3>
                     <p>I'm quick to install and easy to get started</p>
                 </div>
                 <div>
