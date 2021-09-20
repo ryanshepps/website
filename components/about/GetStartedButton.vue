@@ -16,6 +16,8 @@ a {
     margin: 10px;
 
     transition: opacity .2s linear;
+
+    white-space: nowrap;
 }
 
 a:hover {
