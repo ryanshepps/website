@@ -2,14 +2,25 @@
     <div id="about-page">
         <section>
             <div class="content-container">
-                <h1>Ryan Sheppard</h1>
-                <p>I'm a highly motivated software developer who understands collaboration. <b>I'm not afraid to speak my mind when I'm subject to something that could be done better</b>.</p>
+                <h1 class="text-center">Ryan Sheppard</h1>
+                <p class="text-center">I'm a highly motivated software developer who understands collaboration. <b>I'm not afraid to speak my mind when I'm subject to something that could be done better</b>.</p>
             </div>
         </section>
         <section class="slanted-section">
             <div class="content-container">
-                <h1 class="white">My Stack</h1>
+                <h1 class="white text-center">My Stack</h1>
                 <AboutTechStackImages />
+            </div>
+        </section>
+        <section>
+            <div id="about-section" class="content-container">
+                <div>
+                    <h3>Start building a dev team that fights about the health of your codebase</h3>
+                    <p>I'm quick to install and easy to get started</p>
+                </div>
+                <div>
+                    <AboutGetStartedButton />
+                </div>
             </div>
         </section>
     </div>
@@ -33,6 +44,12 @@ section {
     position: relative;
 }
 
+#about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .slanted-section {
     width: 100%;
 }
@@ -50,7 +67,13 @@ section {
 h1 {
     font-size: 3em;
     font-weight: 900;
-    text-align: center;
+    color: var(--importantTextColor);
+    margin: 0;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 900;
     color: var(--importantTextColor);
     margin: 0;
 }
@@ -58,8 +81,11 @@ h1 {
 p {
     font-size: 1.25em;
     font-weight: 300;
-    text-align: center;
     margin: 0;
+}
+
+.text-center {
+    text-align: center;
 }
 
 b {
