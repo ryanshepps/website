@@ -1,45 +1,28 @@
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    src: url('@/assets/fonts/Roboto-Medium.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    src: url('@/assets/fonts/Roboto-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    src: url('@/assets/fonts/Roboto-Light.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Roboto';
-    font-style: 'bold';
-    font-weight: 900;
-    src: url('@/assets/fonts/Roboto-Bold.ttf') format('truetype');
-}
-
-* {
-    font-family: 'Roboto';
-}
-
-.container {
-    max-width: 1920px;
-    margin: auto;
-}
-
-.content-container {
-    max-width: 1280px;
-    margin: auto;
-}
-
 body {
     margin: 0;
 }
+
+h1 {
+    font-size: 3em;
+    font-weight: 900;
+    color: var(--importantTextColor);
+    margin: 0;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 900;
+    color: var(--importantTextColor);
+    margin: 0;
+}
+
+p {
+    font-size: 1.25em;
+    font-weight: 300;
+    margin: 0;
+}
+
+b {
+    font-weight: 700;
+}
+

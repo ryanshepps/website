@@ -8,7 +8,7 @@
         </section>
         <section class="slanted-section">
             <div class="content-container">
-                <h1 class="white text-center">My Stack</h1>
+                <h1 class="white-text text-center">My Stack</h1>
                 <AboutTechStackImages />
             </div>
         </section>
@@ -63,36 +63,5 @@ section {
     height: 100%;
     z-index: -1;
 }
-
-h1 {
-    font-size: 3em;
-    font-weight: 900;
-    color: var(--importantTextColor);
-    margin: 0;
-}
-
-h3 {
-    font-size: 2em;
-    font-weight: 900;
-    color: var(--importantTextColor);
-    margin: 0;
-}
-
-p {
-    font-size: 1.25em;
-    font-weight: 300;
-    margin: 0;
-}
-
-.text-center {
-    text-align: center;
-}
-
-b {
-    font-weight: 700;
-}
-
-.white {
-    color: white;
-}
 </style>
+

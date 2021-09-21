@@ -4,3 +4,22 @@
     --importantTextColor: #314C92;
     --secondaryColor: #D5DDF1;
 }
+
+.container {
+    max-width: 1920px;
+    margin: auto;
+}
+
+.content-container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.white-text {
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
