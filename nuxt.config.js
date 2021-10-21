@@ -1,4 +1,10 @@
 export default {
+    modules: [
+        '@nuxt/content',
+    ],
+    content: {
+        dir: 'content',
+    },
     components: true,
     css: [
         '@/assets/css/default.css',
