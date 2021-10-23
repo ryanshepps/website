@@ -1,20 +1,30 @@
 <template>
     <div id="tech-stack-images">
-        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-            <img src="~/assets/img/techstack/JavaScript.svg" />
-        </a>
-        <a href="https://reactnative.dev/" target="_blank">
-            <img src="~/assets/img/techstack/ReactNative.svg" />
-        </a>
-        <a href="https://vuejs.org/" target="_blank">
-            <img src="~/assets/img/techstack/Vue.svg" />
-        </a>
-        <a href="https://nuxtjs.org/" target="_blank">
-            <img src="~/assets/img/techstack/Nuxt.svg" />
-        </a>
-        <a href="https://www.amazon.ca/Programming-Language-2nd-Brian-Kernighan/dp/0131103628/ref=sr_1_1?dchild=1&keywords=c+programming+language&qid=1632006279&sr=8-1" target="_blank">
-            <img src="~/assets/img/techstack/C.svg" />
-        </a>
+        <TouchableHighlight>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+                <img src="~/assets/img/techstack/JavaScript.svg" />
+            </a>
+        </TouchableHighlight>
+        <TouchableHighlight>
+            <a href="https://reactnative.dev/" target="_blank">
+                <img src="~/assets/img/techstack/ReactNative.svg" />
+            </a>
+        </TouchableHighlight>
+        <TouchableHighlight>
+            <a href="https://vuejs.org/" target="_blank">
+                <img src="~/assets/img/techstack/Vue.svg" />
+            </a>
+        </TouchableHighlight>
+        <TouchableHighlight>
+            <a href="https://nuxtjs.org/" target="_blank">
+                <img src="~/assets/img/techstack/Nuxt.svg" />
+            </a>
+        </TouchableHighlight>
+        <TouchableHighlight>
+            <a href="https://www.amazon.ca/Programming-Language-2nd-Brian-Kernighan/dp/0131103628/ref=sr_1_1?dchild=1&keywords=c+programming+language&qid=1632006279&sr=8-1" target="_blank">
+                <img src="~/assets/img/techstack/C.svg" />
+            </a>
+        </TouchableHighlight>
     </div>
 </template>
 
@@ -23,22 +33,14 @@
     margin: 10px;
 
     display: flex;
-    justify-content: center;
 }
 
 a {
     display: flex;
-    width: 12.5%;
-
-    transition: opacity .2s linear;
-}
-
-a:hover {
-    opacity: 0.5;
 }
 
 img {
     margin: 0px 10px;
-    width: 100%;
+    width: 70%;
 }
 </style>

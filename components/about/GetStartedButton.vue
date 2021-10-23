@@ -1,5 +1,7 @@
 <template>
-    <a href="mailto: ryansheppardd@gmail.com">Get Started</a>
+    <TouchableHighlight>
+        <a href="mailto: ryansheppardd@gmail.com">Get Started</a>
+    </TouchableHighlight>
 </template>
 
 <style scoped>
@@ -15,12 +17,6 @@ a {
     padding: 10px 20px;
     margin: 10px;
 
-    transition: opacity .2s linear;
-
     white-space: nowrap;
-}
-
-a:hover {
-    opacity: 0.5;
 }
 </style>

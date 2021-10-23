@@ -1,15 +1,22 @@
 <template>
     <div class="content-container">
-        <NuxtLink class="link" to="/">About</NuxtLink>
-        <NuxtLink class="link" to="/documentation">Documentation</NuxtLink>
+        <TouchableHighlight class="touchable-highlight">
+            <NuxtLink class="link" to="/">About</NuxtLink>
+        </TouchableHighlight>
+        <TouchableHighlight class="touchable-highlight">
+            <NuxtLink class="link" to="/documentation">Documentation</NuxtLink>
+        </TouchableHighlight>
     </div>
 </template>
 
 <style scoped>
 .content-container {
     display: flex;
-    flex-direction: row;
     height: 60px;
+}
+
+.touchable-highlight {
+    margin: 0 1%;
 }
 
 .link {
@@ -19,7 +26,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
+
+    height: 100%;
 }
 
 .link:hover {
