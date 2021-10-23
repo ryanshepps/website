@@ -37,6 +37,7 @@
 
 a {
     display: flex;
+    justify-content: center;
 }
 
 img {
