@@ -1,8 +1,30 @@
 <template>
     <div class="touchable-highlight">
-        <slot></slot>
+        <a :href="href" :target="target">
+            <slot></slot>
+        </a>
     </div>
 </template>
+
+<script>
+export default {
+    props: {
+        href: {
+            type: String,
+            default: "/",
+        },
+        newTab: {
+            type: Boolean,
+            default: false,
+        },
+    },
+    computed: {
+        target() {
+            return this.newTab ? "_blank" : "";
+        }
+    },
+}
+</script>
 
 <style scoped>
 .touchable-highlight:hover {
