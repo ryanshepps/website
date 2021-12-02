@@ -31,5 +31,10 @@ export default {
     transition: filter 0.1s linear;
     filter: brightness(50%);
 }
+
+a {
+    display: flex;
+    justify-content: center;
+}
 </style>
 
