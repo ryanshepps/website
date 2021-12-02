@@ -9,7 +9,33 @@
         <section class="slanted-section">
             <div class="content-container">
                 <h1 class="white-text text-center">My Stack</h1>
-                <AboutTechStackImages />
+                <div id="tech-stack-images">
+                    <TouchableHighlight 
+                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                        newTab>
+                        <img src="~/assets/img/techstack/JavaScript.svg" />
+                    </TouchableHighlight>
+                    <TouchableHighlight
+                        href="https://reactnative.dev/"
+                        newTab>
+                        <img src="~/assets/img/techstack/ReactNative.svg" />
+                    </TouchableHighlight>
+                    <TouchableHighlight
+                        href="https://vuejs.org/"
+                        newTab>
+                        <img src="~/assets/img/techstack/Vue.svg" />
+                    </TouchableHighlight>
+                    <TouchableHighlight
+                        href="https://nuxtjs.org/"
+                        newTab>
+                        <img src="~/assets/img/techstack/Nuxt.svg" />
+                    </TouchableHighlight>
+                    <TouchableHighlight
+                        href="https://www.amazon.ca/Programming-Language-2nd-Brian-Kernighan/dp/0131103628/ref=sr_1_1?dchild=1&keywords=c+programming+language&qid=1632006279&sr=8-1"
+                        newTab>
+                        <img src="~/assets/img/techstack/C.svg" />
+                    </TouchableHighlight>
+                </div>
             </div>
         </section>
         <section>
@@ -62,6 +88,16 @@ section {
     width: 100%;
     height: 100%;
     z-index: -1;
+}
+
+#tech-stack-images {
+    margin: 10px;
+    display: flex;
+}
+
+img {
+    margin: 0px 10px;
+    width: 70%;
 }
 </style>
 
