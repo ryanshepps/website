@@ -35,6 +35,7 @@ export default {
 a {
     display: flex;
     justify-content: center;
+    text-decoration: none;
 }
 </style>
 
