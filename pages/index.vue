@@ -44,9 +44,10 @@
                     <h3>Start building a dev team that fights for the health of your codebase</h3>
                     <p>I'm quick to install and easy to get started</p>
                 </div>
-                <div>
-                    <AboutGetStartedButton />
-                </div>
+                <TouchableHighlight
+                    href="mailto: ryansheppardd@gmail.com">
+                    <p class="get-started-btn">Get Started</p>
+                </TouchableHighlight>
             </div>
         </section>
     </div>
@@ -99,5 +100,21 @@ img {
     margin: 0px 10px;
     width: 70%;
 }
+
+.get-started-btn {
+    color: var(--importantTextColor);
+    background-color: var(--secondaryColor);
+    
+    font-weight: 900;
+    text-decoration: none;
+
+    border: 4px var(--importantTextColor) solid;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 10px;
+
+    white-space: nowrap;
+}
+
 </style>
 
