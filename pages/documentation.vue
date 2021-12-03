@@ -1,5 +1,6 @@
 <template>
-    <div id="documentation-page">
-        <h1>Documentation Page!</h1> 
+    <div class="content-container">
+        <h1>Introduction</h1>
+        <p>I'm a software developer with an interest in philosophy.</p>
     </div>
 </template>
