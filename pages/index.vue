@@ -2,59 +2,65 @@
     <div id="about-page">
         <section>
             <div class="content-container">
-                <h1 class="text-center">Ryan Sheppard</h1>
-                <p class="text-center">I'm a highly motivated software developer who understands collaboration. <b>I'm not afraid to speak my mind when I'm subject to something that could be done better</b>.</p>
+                <h1 class="text-center">
+                    Ryan Sheppard
+                </h1>
+                <p class="text-center">
+                    I'm a highly motivated software developer who understands collaboration. <b>I'm not afraid to speak my mind when I'm subject to something that could be done better</b>.
+                </p>
             </div>
         </section>
         <section class="slanted-section">
             <div class="content-container">
-                <h1 class="white-text text-center">My Stack</h1>
+                <h1 class="white-text text-center">
+                    My Stack
+                </h1>
                 <div id="tech-stack-images">
                     <TouchableHighlight 
                         href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                        newTab>
-                        <img src="~/assets/img/techstack/JavaScript.svg" />
+                        new-tab>
+                        <img src="~/assets/img/techstack/JavaScript.svg">
                     </TouchableHighlight>
                     <TouchableHighlight
                         href="https://reactnative.dev/"
-                        newTab>
-                        <img src="~/assets/img/techstack/ReactNative.svg" />
+                        new-tab>
+                        <img src="~/assets/img/techstack/ReactNative.svg">
                     </TouchableHighlight>
                     <TouchableHighlight
                         href="https://vuejs.org/"
-                        newTab>
-                        <img src="~/assets/img/techstack/Vue.svg" />
+                        new-tab>
+                        <img src="~/assets/img/techstack/Vue.svg">
                     </TouchableHighlight>
                     <TouchableHighlight
                         href="https://nuxtjs.org/"
-                        newTab>
-                        <img src="~/assets/img/techstack/Nuxt.svg" />
+                        new-tab>
+                        <img src="~/assets/img/techstack/Nuxt.svg">
                     </TouchableHighlight>
                     <TouchableHighlight
                         href="https://www.amazon.ca/Programming-Language-2nd-Brian-Kernighan/dp/0131103628/ref=sr_1_1?dchild=1&keywords=c+programming+language&qid=1632006279&sr=8-1"
-                        newTab>
-                        <img src="~/assets/img/techstack/C.svg" />
+                        new-tab>
+                        <img src="~/assets/img/techstack/C.svg">
                     </TouchableHighlight>
                 </div>
             </div>
         </section>
         <section>
-            <div id="about-section" class="content-container">
+            <div
+                id="about-section"
+                class="content-container">
                 <div>
                     <h3>Start building a dev team that fights for the health of your codebase</h3>
                     <p>I'm quick to install and easy to get started</p>
                 </div>
-                <TouchableHighlight
-                    href="mailto: ryansheppardd@gmail.com">
-                    <p class="get-started-btn">Get Started</p>
+                <TouchableHighlight href="mailto: ryansheppardd@gmail.com">
+                    <p class="get-started-btn">
+                        Get Started
+                    </p>
                 </TouchableHighlight>
             </div>
         </section>
     </div>
 </template>
-
-<script>
-</script>
 
 <style scoped>
 #about-page {
@@ -115,6 +121,5 @@ img {
 
     white-space: nowrap;
 }
-
 </style>
 

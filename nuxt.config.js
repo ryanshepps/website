@@ -10,5 +10,5 @@ export default {
         '@/assets/css/default.css',
         '@/assets/css/theme.css',
         '@/assets/css/fonts.css',
-    ]
-}
+    ],
+};

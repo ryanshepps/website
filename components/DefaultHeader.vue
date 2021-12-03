@@ -1,10 +1,18 @@
 <template>
     <div class="content-container">
         <TouchableHighlight class="touchable-highlight">
-            <NuxtLink class="link" to="/">About</NuxtLink>
+            <NuxtLink
+                class="link"
+                to="/">
+                About
+            </NuxtLink>
         </TouchableHighlight>
         <TouchableHighlight class="touchable-highlight">
-            <NuxtLink class="link" to="/documentation">Documentation</NuxtLink>
+            <NuxtLink
+                class="link"
+                to="/documentation">
+                Documentation
+            </NuxtLink>
         </TouchableHighlight>
     </div>
 </template>

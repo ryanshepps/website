@@ -1,7 +1,9 @@
 <template>
     <div class="touchable-highlight">
-        <a :href="href" :target="target">
-            <slot></slot>
+        <a
+            :href="href"
+            :target="target">
+            <slot />
         </a>
     </div>
 </template>
@@ -11,19 +13,21 @@ export default {
     props: {
         href: {
             type: String,
-            default: "/",
+            default: '/',
         },
+
         newTab: {
             type: Boolean,
             default: false,
         },
     },
+
     computed: {
         target() {
-            return this.newTab ? "_blank" : "";
-        }
+            return this.newTab ? '_blank' : '';
+        },
     },
-}
+};
 </script>
 
 <style scoped>
