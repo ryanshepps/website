@@ -1,3 +1,7 @@
+:root {
+    --defaultViewWidth: 1280px;
+}
+
 body {
     margin: 0;
 }
