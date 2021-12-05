@@ -1,10 +1,8 @@
 <template> 
     <div
-        id="sidebar-title"
+        id="sidebar-title-dropdown"
         @click="toggle()">
-        <a class="title">
-            Philosophy
-        </a>
+        <LayoutSidebarTitle />
         <img 
             class="arrow"
             :class="{ arrowclosed: closed }"
@@ -29,14 +27,8 @@ export default {
 </script>
 
 <style scoped>
-#sidebar-title {
+#sidebar-title-dropdown {
     cursor: pointer;
-}
-
-.title {
-    display: inline-block;
-    color: white;
-    font-weight: bold;
 }
 
 .arrow {

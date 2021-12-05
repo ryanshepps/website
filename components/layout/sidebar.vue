@@ -1,7 +1,7 @@
 <template>
     <div id="sidebar">
         <div id="sidebar-content">
-            <LayoutSidebartitle />
+            <LayoutSidebarTitledropdown />
             <NuxtLink 
                 class="sidebar-link"
                 to="/documentation">
