@@ -2,7 +2,7 @@
     <div
         id="sidebar-title-dropdown"
         @click="toggle()">
-        <LayoutSidebarTitle />
+        <LayoutSidebarTitle :title="title" />
         <img 
             class="arrow"
             :class="{ arrowclosed: closed }"
@@ -12,6 +12,13 @@
 
 <script>
 export default {
+    props: {
+        title: {
+            type: String,
+            required: true,
+        },
+    },
+
     data() {
         return {
             closed: true,

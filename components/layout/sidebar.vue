@@ -1,12 +1,10 @@
 <template>
     <div id="sidebar">
         <div id="sidebar-content">
-            <LayoutSidebarTitledropdown />
-            <NuxtLink 
-                class="sidebar-link"
-                to="/documentation">
-                Introduction
-            </NuxtLink>
+            <LayoutSidebarTitle 
+                title="Introduction"
+                href="/" />
+            <LayoutSidebarTitledropdown title="Philosophy" />
         </div>
     </div>
 </template>
@@ -23,9 +21,5 @@
 #sidebar-content {
     height: 100%;
     margin: 8%;
-}
-
-.sidebar-link-dropdown {
-    color: white; 
 }
 </style>

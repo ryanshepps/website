@@ -1,8 +1,26 @@
 <template>
-    <a class="title">
-        Philosophy
-    </a>
+    <NuxtLink
+        class="title"
+        :to="href">
+        {{ title }}
+    </NuxtLink>
 </template>
+
+<script>
+export default {
+    props: {
+        href: {
+            type: String,
+            default: '#',
+        },
+
+        title: {
+            type: String,
+            required: true,
+        },
+    },
+};
+</script>
 
 <style scoped>
 .title {
