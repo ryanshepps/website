@@ -27,5 +27,7 @@ export default {
     display: inline-block;
     color: white;
     font-weight: bold;
+    text-decoration: none;
+    margin: 5px 0;
 }
 </style>
