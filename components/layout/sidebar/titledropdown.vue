@@ -21,6 +21,13 @@ export default {
         };
     },
 
+    computed: {
+        articles() {
+            const articles = this.$store.getters.articles(this.folderName);
+            return articles;
+        },
+    },
+
     methods: {
         toggle: function() {
             this.closed = !this.closed;

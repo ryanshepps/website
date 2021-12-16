@@ -20,6 +20,21 @@ export const getters = {
 
         return documentationFolders;
     },
+
+    articles: (state, getters) => (folderName) => {
+        const articles = [];
+        
+        state.documentation.forEach((article) => {
+            let curArticleFolderName = getFolderNameFromPath(article.path);
+            curArticleFolderName = capitalize(curArticleFolderName);
+            console.log(folderName, curArticleFolderName);
+            if (folderName === curArticleFolderName) {
+                articles.push(article);
+            }
+        });
+
+        return articles;
+    },
 };
 
 export const mutations = {
