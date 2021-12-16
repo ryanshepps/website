@@ -4,10 +4,24 @@
             <LayoutSidebarTitle 
                 title="Introduction"
                 href="/" />
-            <LayoutSidebarTitledropdown title="Philosophy" />
+            <LayoutSidebarTitledropdown
+                v-for="folder in folders"
+                :key="folder"
+                :title="folder" />
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    computed: {
+        folders() {
+            console.log('this is the documentation folders', this.$store.getters.documentationFolders);
+            return this.$store.getters.documentationFolders;
+        },
+    },
+}
+</script>
 
 <style scoped>
 #sidebar {
