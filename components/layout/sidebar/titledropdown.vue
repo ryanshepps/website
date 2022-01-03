@@ -17,8 +17,7 @@
 </template>
 
 <script>
-import { getArticleLink } from '../../../utilities/documentation.js';
-import { capitalize } from '../../../utilities/string.js';
+import { getArticleLink, formatFolderName } from '../../../utilities/documentation.js';
 
 export default {
     props: {
@@ -50,7 +49,7 @@ export default {
         },
 
         formatFolderName: function(folderName) {
-            return capitalize(folderName.split('/')[1]);
+            return formatFolderName(folderName);
         },
     },
 };
