@@ -4,12 +4,14 @@
         @click="toggle()">
         <LayoutSidebarTitle :title="formatFolderName(folderName)" />
         <div :class="[{ 'hidden': closed }]">
-            <LayoutSidebarLink 
+            <TouchableHighlight
                 v-for="article in articles"
-                :key="article.path"
-                :to="getArticleLink(article.path)"
-                :text="article.title"
-                />
+                :key="article.path">
+                <LayoutSidebarLink 
+                    :to="getArticleLink(article.path)"
+                    :text="article.title"
+                    />
+            </TouchableHighlight>
         </div>
     </div>
 </template>

@@ -1,9 +1,11 @@
 <template>
-    <NuxtLink
-        class="title"
-        :to="href">
-        {{ title }}
-    </NuxtLink>
+    <TouchableHighlight>
+        <NuxtLink
+            class="title"
+            :to="href">
+            {{ title }}
+        </NuxtLink>
+    </TouchableHighlight>
 </template>
 
 <script>
