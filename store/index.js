@@ -11,10 +11,8 @@ export const getters = {
         const documentationFolders = [];
 
         state.documentation.forEach((article) => {
-            let folderName = getFolderNameFromPath(article.path);
-            folderName = capitalize(folderName);
-            if (!exists(documentationFolders, folderName)) {
-                documentationFolders.push(folderName);
+            if (article.dir !== '/' && !exists(documentationFolders, article.dir)) {
+                documentationFolders.push(article.dir);
             }
         });
 
@@ -45,7 +43,7 @@ export const mutations = {
 
 export const actions = {
     async nuxtServerInit(context, {$content}) {
-        const documentationContent = await $content('/', {deep: true}).only(['title', 'path']).fetch();
+        const documentationContent = await $content('/', {deep: true}).only(['title', 'path', 'dir']).fetch();
         context.commit('initDocumentation', documentationContent);
     },
 };
