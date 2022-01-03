@@ -3,12 +3,14 @@
         id="sidebar-title-dropdown"
         @click="toggle()">
         <LayoutSidebarTitle :title="title" />
-        <LayoutSidebarLink 
-            v-for="article in articles"
-            :key="article.path"
-            :to="getArticleLink(article.path)"
-            :text="article.title"
-            />
+        <div :class="[{ 'hidden': closed }]">
+            <LayoutSidebarLink 
+                v-for="article in articles"
+                :key="article.path"
+                :to="getArticleLink(article.path)"
+                :text="article.title"
+                />
+        </div>
     </div>
 </template>
 
@@ -53,6 +55,10 @@ export default {
 <style scoped>
 #sidebar-title-dropdown {
     cursor: pointer;
+}
+
+.hidden {
+    display: none;
 }
 </style>
 
