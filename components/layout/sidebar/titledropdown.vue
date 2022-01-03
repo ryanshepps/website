@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import { articleLinkPrefix } from '../../../utilities/documentation.js';
+import { getArticleLink } from '../../../utilities/documentation.js';
 import { capitalize } from '../../../utilities/string.js';
 
 export default {
@@ -44,8 +44,7 @@ export default {
         },
 
         getArticleLink: function(articlePath) {
-            console.log('returning this', articleLinkPrefix + articlePath);
-            return articleLinkPrefix + articlePath;
+            return getArticleLink(articlePath);
         },
 
         formatFolderName: function(folderName) {

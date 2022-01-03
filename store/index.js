@@ -30,6 +30,18 @@ export const getters = {
 
         return articles;
     },
+
+    rootArticles: (state, getters) => {
+        const rootArticles = [];
+
+        state.documentation.forEach((article) => {
+            if (article.dir === '/') {
+                rootArticles.push(article);
+            }
+        });
+
+        return rootArticles;
+    },
 };
 
 export const mutations = {
