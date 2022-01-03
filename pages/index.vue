@@ -19,7 +19,7 @@
                     <TouchableHighlight 
                         href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                         new-tab>
-                        <img src="~/assets/img/techstack/JavaScript.svg">
+                        <img class="techstack-image" src="~/assets/img/techstack/JavaScript.svg">
                     </TouchableHighlight>
                     <TouchableHighlight
                         href="https://reactnative.dev/"
@@ -103,8 +103,8 @@ section {
 }
 
 img {
-    margin: 0px 10px;
-    width: 70%;
+    width: 100%;
+    height: 70%;
 }
 
 .get-started-btn {
