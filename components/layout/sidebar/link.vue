@@ -1,5 +1,6 @@
 <template>
     <NuxtLink
+        class="link"
         :to="to">
         {{ text }}
     </NuxtLink>
@@ -20,3 +21,13 @@ export default {
     },
 }
 </script>
+
+<style scoped>
+.link {
+    color: white;
+    text-decoration: none;
+    display: block;
+
+    margin: 5px 0px 5px 5px;
+}
+</style>
