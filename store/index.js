@@ -45,7 +45,7 @@ export const mutations = {
 
 export const actions = {
     async nuxtServerInit(context, {$content}) {
-        const documentationContent = await $content('/', {deep: true}).only(['title']).fetch();
+        const documentationContent = await $content('/', {deep: true}).only(['title', 'path']).fetch();
         context.commit('initDocumentation', documentationContent);
     },
 };

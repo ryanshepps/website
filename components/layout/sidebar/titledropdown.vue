@@ -3,10 +3,18 @@
         id="sidebar-title-dropdown"
         @click="toggle()">
         <LayoutSidebarTitle :title="title" />
+        <LayoutSidebarLink 
+            v-for="article in articles"
+            :key="article.path"
+            :to="getArticleLink(article.path)"
+            :text="article.title"
+            />
     </div>
 </template>
 
 <script>
+import { articleLinkPrefix } from '../../../utilities/documentation.js';
+
 export default {
     props: {
         title: {
@@ -18,6 +26,7 @@ export default {
     data() {
         return {
             closed: true,
+            folderName: this.title,
         };
     },
 
@@ -31,6 +40,11 @@ export default {
     methods: {
         toggle: function() {
             this.closed = !this.closed;
+        },
+
+        getArticleLink: function(articlePath) {
+            console.log('returning this', articleLinkPrefix + articlePath);
+            return articleLinkPrefix + articlePath;
         },
     },
 };
