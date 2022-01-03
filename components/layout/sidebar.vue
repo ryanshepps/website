@@ -16,7 +16,6 @@
 export default {
     computed: {
         folders() {
-            console.log('this is the documentation folders', this.$store.getters.documentationFolders);
             return this.$store.getters.documentationFolders;
         },
     },
