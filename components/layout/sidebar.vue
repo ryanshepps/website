@@ -7,7 +7,7 @@
             <LayoutSidebarTitledropdown
                 v-for="folder in folders"
                 :key="folder"
-                :title="folder" />
+                :folderName="folder" />
         </div>
     </div>
 </template>

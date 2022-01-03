@@ -2,7 +2,7 @@
     <div
         id="sidebar-title-dropdown"
         @click="toggle()">
-        <LayoutSidebarTitle :title="title" />
+        <LayoutSidebarTitle :title="formatFolderName(folderName)" />
         <div :class="[{ 'hidden': closed }]">
             <LayoutSidebarLink 
                 v-for="article in articles"
@@ -16,10 +16,11 @@
 
 <script>
 import { articleLinkPrefix } from '../../../utilities/documentation.js';
+import { capitalize } from '../../../utilities/string.js';
 
 export default {
     props: {
-        title: {
+        folderName: {
             type: String,
             required: true,
         },
@@ -28,14 +29,12 @@ export default {
     data() {
         return {
             closed: true,
-            folderName: this.title,
         };
     },
 
     computed: {
         articles() {
-            const articles = this.$store.getters.articles(this.folderName);
-            return articles;
+            return this.$store.getters.articlesInFolder(this.folderName);
         },
     },
 
@@ -47,6 +46,10 @@ export default {
         getArticleLink: function(articlePath) {
             console.log('returning this', articleLinkPrefix + articlePath);
             return articleLinkPrefix + articlePath;
+        },
+
+        formatFolderName: function(folderName) {
+            return capitalize(folderName.split('/')[1]);
         },
     },
 };

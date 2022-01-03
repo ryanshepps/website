@@ -19,14 +19,11 @@ export const getters = {
         return documentationFolders;
     },
 
-    articles: (state, getters) => (folderName) => {
+    articlesInFolder: (state, getters) => (folderName) => {
         const articles = [];
         
         state.documentation.forEach((article) => {
-            let curArticleFolderName = getFolderNameFromPath(article.path);
-            curArticleFolderName = capitalize(curArticleFolderName);
-            console.log(folderName, curArticleFolderName);
-            if (folderName === curArticleFolderName) {
+            if (folderName === article.dir) {
                 articles.push(article);
             }
         });
