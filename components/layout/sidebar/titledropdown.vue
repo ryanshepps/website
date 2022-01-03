@@ -1,8 +1,8 @@
 <template> 
-    <div
-        id="sidebar-title-dropdown"
-        @click="toggle()">
-        <LayoutSidebarTitle :title="formatFolderName(folderName)" />
+    <div id="sidebar-title-dropdown">
+        <div @click="toggle()">
+            <LayoutSidebarTitle :title="formatFolderName(folderName)" />
+        </div>
         <div :class="[{ 'hidden': closed }]">
             <TouchableHighlight
                 v-for="article in articles"
