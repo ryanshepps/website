@@ -24,7 +24,7 @@ export default {
 
 <style scoped>
 .link {
-    color: white;
+    color: var(--defaultTextColor);
     text-decoration: none;
     display: block;
 

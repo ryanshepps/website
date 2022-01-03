@@ -42,7 +42,8 @@ export default {
     height: 100%;
     width: calc((100% - var(--defaultViewWidth)) / 2);
     
-    background-color: var(--importantTextColor);
+    background-color: var(--defaultBackgroundColor);
+    border-right: solid 1px #EAEAEA;
 }
 
 #sidebar-content {

@@ -27,7 +27,7 @@ export default {
 <style scoped>
 .title {
     display: inline-block;
-    color: white;
+    color: var(--defaultTextColor);
     font-weight: bold;
     text-decoration: none;
     margin: 5px 0;
