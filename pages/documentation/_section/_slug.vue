@@ -1,6 +1,6 @@
 <template>
     <div id="documentation-page">
-        <div class="content-container">
+        <div class="content-container article-container">
             <h1>{{ article.title }}</h1>
             <nuxt-content :document="article" />
         </div>
@@ -17,4 +17,10 @@ export default {
     },
 };
 </script>
+
+<style scoped>
+.article-container {
+    padding: 1% 0 0 5%;
+}
+</style>
 
