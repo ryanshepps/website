@@ -12,7 +12,14 @@ export default {
     layout: 'sidebar',
 
     async asyncData({ $content, params }) {
-        const article = await $content(params.section, params.slug).fetch()
+        let article;
+
+        if (!params.section && !params.slug) {
+            article = await $content('introduction').fetch();
+        } else {
+            article = await $content(params.section, params.slug).fetch();
+        }
+
         return { article };
     },
 };
