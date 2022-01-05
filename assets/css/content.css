@@ -1,0 +1,25 @@
+.nuxt-content h1 {
+    font-size: 2.5em;
+    font-weight: 900;
+    color: var(--importantTextColor);
+    margin: 1em 0;
+}
+
+.nuxt-content h2 {
+    font-size: 2em;
+    font-weight: 900;
+    color: var(--importantTextColor);
+    margin: 1em 0;
+}
+
+.nuxt-content h3 {
+    font-size: 1.5em;
+    font-weight: 900;
+    color: var(--importantTextColor);
+    margin: 1em 0;
+}
+
+p + p {
+    margin: 1em 0;
+}
+
