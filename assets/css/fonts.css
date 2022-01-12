@@ -26,7 +26,16 @@
     src: url('@/assets/fonts/Roboto-Bold.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'JetBrains';
+    font-style: normal;
+    src: url('@/assets/fonts/JetBrains-Mono-Regular-Nerd-Font-Complete.ttf') format('truetype');
+}
+
 * {
     font-family: 'Roboto';
 }
 
+code, pre {
+    font-family: 'JetBrains';
+}
