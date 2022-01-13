@@ -1,7 +1,7 @@
 <template>
     <div id="documentation-page">
         <div class="content-container article-container">
-            <h1>{{ article.title }}</h1>
+            <h1 class="title">{{ article.title }}</h1>
             <nuxt-content :document="article" />
         </div>
     </div>
@@ -28,6 +28,11 @@ export default {
 <style scoped>
 .article-container {
     padding: 1% 0 0 5%;
+}
+
+.title {
+    width: 55%;
+    margin: auto;
 }
 </style>
 
