@@ -162,7 +162,7 @@ Start ups are very fast paced. Before I knew it, I get moved to a new project an
 
 **Technology**: [Detox](https://github.com/wix/Detox), Pipelines, [React Native](https://reactnative.dev/docs/getting-started).
 
-**Skills**: 
+**Skills**: Initiative.
 
 There are already a fair amount of unit tests in the mobile app, but there are no integration tests. Time and time again, we’re about to release a new version of the app, but someone finds an issue in an obscure area. The culprit? A code change on a completely different side of the app. Unit tests are great for testing isolated parts of your code base. Integration tests make sure that those isolated parts are working in cohesion with each other.
 
