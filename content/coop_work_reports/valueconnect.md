@@ -2,7 +2,7 @@
 title: S21/F21 Work Term Report
 ---
 
-“We should remember that good fortune often happens when opportunity meets with preparation.” - Thomas Edison. I’m very lucky to be in the position I’m in. But I think there is one consistent action I’ve done to aid my luck: seizing opportunities. Spotting an opportunity, bringing it to fruition and acting on it is something that I’ve gotten really good at. In fact, none of my goals this work term are related to my job tasks. Many of them are the result of seeing an opportunity and acting on it.
+“We should remember that good fortune often happens when opportunity meets with preparation.” - [Thomas Edison](https://www.thomasedison.org/edison-quotes). I’m very lucky to be in the position I’m in. But I think there is one consistent action I’ve done to aid my luck: seizing opportunities. Spotting an opportunity, bringing it to fruition and acting on it is something that I’ve gotten really good at. In fact, none of my goals this work term are related to my job tasks. Many of them are the result of seeing an opportunity and acting on it.
 
 # Value Connect
 
@@ -44,8 +44,7 @@ It’s here that I learn about Cross Site Request Forgery(XSRF) and how attacker
 
 **Skills**: Creativity.
 
-Git[5] has a cool feature that shows who wrote each line of code and how long ago it was changed. In Value Connect’s code base, some lines have not been changed in five years. It’s awesome that developers can visibly see who implemented what infrastructure. How can I create infrastructure that other developers will see?
-
+[Git](https://www.atlassian.com/git/tutorials/what-is-git) has a cool feature that shows who wrote each line of code and how long ago it was changed. In Value Connect’s code base, some lines have not been changed in five years. It’s awesome that developers can visibly see who implemented what infrastructure. How can I create infrastructure that other developers will see?
 
 `console.log(';)'); You, 2 months ago - commit message here`
 
@@ -161,7 +160,7 @@ Start ups are very fast paced. Before I knew it, I get moved to a new project an
 
 ## Add Integration Tests to the Mobile App. ❌
 
-**Technology**: Detox [7]. Pipelines, React Native.
+**Technology**: [Detox](https://github.com/wix/Detox). Pipelines, React Native.
 
 **Skills**: 
 
