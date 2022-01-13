@@ -4,6 +4,7 @@ export default {
     ],
     content: {
         dir: 'content',
+        liveEdit: false,
     },
     components: true,
     css: [
