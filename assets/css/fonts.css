@@ -29,7 +29,7 @@
 @font-face {
     font-family: 'JetBrains';
     font-style: normal;
-    src: url('@/assets/fonts/JetBrains-Mono-Regular-Nerd-Font-Complete.ttf') format('truetype');
+    src: url('@/assets/fonts/JetBrainsMono-Regular.ttf') format('truetype');
 }
 
 * {
