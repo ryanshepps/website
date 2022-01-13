@@ -14,7 +14,7 @@ I chose Value Connect because I see opportunity. There is opportunity in getting
 
 ## Job Description
 
-I work on a lot of projects. At the beginning of my work term, my responsibility is to work alongside our designer to develop a replacement front-end to for our appraisal order system. I work hard to integrate myself with the processes and workflows that my teammates use.
+I work on a lot of projects. At the beginning of my work term, my responsibility is to work alongside our designer to develop a replacement front-end for our appraisal order system. I work hard to integrate myself with the processes and workflows that my teammates use.
 
 In the following months, I work on the mobile inspection tool. An app that solves common issues and concerns of property appraisers. 
 
@@ -36,7 +36,7 @@ While I work on the new front-end, the rest of the team tackles the back-end. Th
 
 I see my first opportunity when working on the mobile inspection tool. There is an issue when making a request to register a mobile appraiser. I spend a couple hours figuring out the best way to solve the problem by studying how the system handles web requests. I learn a lot about professional Java code and the [Spring](https://spring.io/why-spring) framework, but it’s not enough to solve the issue. I employ the help of a co-worker who points me in the direction of a Spring project called [Spring Security](https://spring.io/projects/spring-security).
 
-It’s here that I learn about Cross Site Request Forgery(XSRF) and how attackers can leverage data from a different browser window to make a web request on the user’s behalf. Spring Security enables XSRF protections by default for each web request. Fortunately, XSRF is only really possible on a web browser. I make a pull request that disables XSRF protections for our mobile endpoint. My first goal is complete.
+It’s here that I learn about Cross Site Request Forgery(XSRF) and how attackers can leverage data from a different browser window to make a web request on the user’s behalf. Spring Security enables XSRF protections by default for each web request. Fortunately, XSRF is only really possible on a web browser. I make a pull request that disables XSRF protections for our mobile requests. My first goal is complete.
 
 ## Add a Linter to the Front-End Build Process ✅
 
@@ -50,7 +50,7 @@ It’s here that I learn about Cross Site Request Forgery(XSRF) and how attacker
 
 Thinking about where I can create some infrastructure, I come across code formatting. [ESLint](https://eslint.org/docs/user-guide/getting-started) is a tool that automatically formats code and warns of language anti-patterns. Enforcing the same format makes the code base easier to read. Imagine a textbook that has different writing style throughout. Additionally, the less time developers spend reading, the more time they can spend writing. Implementing a linter on my current project would be a great idea!
 
-I complete this goal by creating a linting configuration file that tells ESLint how I want the code to be formatted. I carefully configure rules and include why rules are enforced. I want future developers to be able to make informed decisions on code enforcement. I write a BASH script that checks for linting errors before committing code to the code base. Lastly, I include a step in the pipeline that checks whether code is linted or not. The pull request takes 6 iterations before it’s finally committed to the code base and is there forever.
+I complete this goal by creating a linting configuration file that tells ESLint how I want the code to be formatted. I carefully configure rules and include why rules are enforced. I want future Value Connect developers to make informed decisions on code enforcement. I write a BASH script that checks for linting errors before committing code to the code base. Lastly, I include a step in the pipeline that checks whether code is linted or not. The pull request takes 6 iterations before it’s finally committed to the code base and is there forever.
 
 ## Have a Cleaner Commit History ✅
 
@@ -60,7 +60,7 @@ I complete this goal by creating a linting configuration file that tells ESLint 
 
 20% of my time reading code is glancing over the lines that my predecessor’s wrote. The other 80% is looking at the commit history wondering what on earth they were thinking. Commit history *should* accompany code changes with why a change is being made
 
-It’s clear to me that nobody always gets their commit history right the first time. In fact, getting commit history wrong is so common that [Git](https://www.atlassian.com/git/tutorials/what-is-git) provides a suite of tools to edit commit history. Over the next couple months, I spend extra time becoming more knowledgeable on git. Here is a list of tools that I learned to complete this goal:
+It’s clear to me that nobody always gets their commit history right the first time. In fact, getting commit history wrong is so common that [Git](https://www.atlassian.com/git/tutorials/what-is-git) provides a suite of tools to edit commit history. Over the next couple months, I spend extra time ensuring that I leave a good commit history. Here is a list of tools that I learned to complete this goal:
 
 `reset`
 
@@ -68,7 +68,7 @@ It’s clear to me that nobody always gets their commit history right the first 
 
 `alias`
 
-- I use git aliases to visually show code differences on the screen that I make commit messages. Now I can see exactly what I’m committing has I’m writing the commit message.
+- I use Git aliases to visually show code differences on the screen that I make commit messages. Now I can see exactly what I’m committing as I’m writing the commit message.
 
 ```
 update content styles
@@ -130,7 +130,7 @@ index c0f8fe6..67ad0ed 100644
 
 In April, I begin working on the mobile app. Linting the front-end was very successful, and I can see that our mobile app code base could really use the same love. However, there were a couple issues with linting the front-end code base that I hope to remedy here.
 
-While linting the front-end code base, I continually played catch up with new code or code that had been out before my linting pull request got merged. I had to keep linting new code reviews that did not contain my linting configuration until the entire code base was linted.
+While linting the front-end code base, I continually played catch up with new code or code that had been out before my linting pull request got merged. I had to keep linting new pull requests that did not contain my linting configuration until the entire code base was linted.
 
 During this work term, I’m taking Systems Programming (CIS\*3050) which has a whole unit on BASH scripting. I take this opportunity to write a simple bash script that checks if changed files are linted. Instead of keeping track of whether every one’s pull requests are linted, the pipeline runs the script and checks this for me. It will take longer for the entire code base to be linted, but there is a lot less manual work.
 
@@ -142,7 +142,7 @@ This goal is currently in progress. There is a pull request out for it that is w
 
 **Skills**: Creativity, Organization.
 
-My team hosts a book club where we read Clean Code by Robert Martin to help develop our skills at work. In this book, I learn about wrapping third party code with your own code. The most fascinating reason why you should do this, is because if you ever need to replace third-party code (sometimes libraries get deprecated, or the library is not performing as well as one wants), you only need to change the code in file that wraps the third-party code. Better yet, you know exactly what the new library you’re implementing needs to do because the functions that wrapped the last library give you context!
+My team hosts a book club where we read [Clean Code](https://www.amazon.ca/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=sr_1_1?crid=2X1EZUV4VNU3&keywords=clean+code&qid=1642081873&sprefix=clean+code%2Caps%2C544&sr=8-1) by Robert Martin to help develop our skills at work. In this book, I learn about wrapping third party code with your own code. The most fascinating reason why you should do this, is because if you ever need to replace third-party code (sometimes libraries get deprecated, or the library is not performing as well as one wants), you only need to change the file that wraps the third-party code. Better yet, you know exactly what the new library you’re implementing needs to do because the functions that wrapped the last library give you context!
 
 ```javascript
 const cleanPreviousTransactions = () => {
@@ -154,7 +154,7 @@ const cleanPreviousTransactions = () => {
 };
 ```
 
-I really want to try this out with with the mobile app. We’re currently using a library called Sentry. It’s a powerful logging solution, but it’s not properly set up and our implementation is all over the place. My plan for completing this goal goes like this: See where we can improve on our current use of Sentry. Write some documentation to standardize the use of logging. Create a wrapper that wraps the Sentry library calls using the documentation.
+I really want to try this out with with the mobile app. We’re currently using a library called Sentry. It’s a powerful logging solution, but it’s not properly set up and our implementation is all over the place. My plan for completing this goal goes like this: See where we can improve on our current use of Sentry. Write some documentation to standardize the use of logging. Create a wrapper that wraps the Sentry library calls using the documentation I wrote.
 
 Start ups are very fast paced. Before I knew it, I get moved to a new project and am no longer working on the mobile app. I am unsuccessful in completing this goal.
 
@@ -164,11 +164,11 @@ Start ups are very fast paced. Before I knew it, I get moved to a new project an
 
 **Skills**: Initiative.
 
-There are already a fair amount of unit tests in the mobile app, but there are no integration tests. Time and time again, we’re about to release a new version of the app, but someone finds an issue in an obscure area. The culprit? A code change on a completely different side of the app. Unit tests are great for testing isolated parts of your code base. Integration tests make sure that those isolated parts are working in cohesion with each other.
+There are already a fair amount of unit tests in the mobile app, but there are no integration tests. Time and time again, we’re about to release a new version of the app, but someone finds an issue in an obscure area. The culprit? A code change on a completely different side of the app. Unit tests are great for testing isolated parts of the code base. Integration tests ensure isolated parts are working in cohesion with each other.
 
-The next step to catching bugs in the mobile app is to add integrations tests. Once I was browsing some open source code to check out how they do things in react-native. I came across this cool integration test library called Detox. It looks awesome, has pipeline capabilities, and works with [React Native](https://reactnative.dev/docs/getting-started).
+The next step to catching bugs in the mobile app is to add integrations tests. Once I was browsing some open source code to check out how they do things in [React Native](https://reactnative.dev/docs/getting-started). I came across this cool integration test library called [Detox](https://github.com/wix/Detox). It looks awesome, has pipeline capabilities, and works with React Native.
 
-As with the last goal, I am unable to complete this goal. I see it as a side-effect of my opportunity to work in this field. It’s fast paced. I’m not going to waste time dwelling on my failure, rather I’ve already developed goals for the new project that I’m working on.
+As with the last goal, I am unable to complete this goal. I see it as a side-effect of my opportunity to work in this field. I’m not going to waste time dwelling on my failure, rather I’ve already developed goals for the new project that I’m working on.
 
 # Conclusion
 
@@ -176,7 +176,7 @@ This work term exceeds my expectations. I expect to be a junior developer comple
 
 Before this work term, I would have said that I’m in coop to get a head start on industry experience before I graduate. After completing my first work term, **I’m in coop because of the information that I learn about the industry before I graduate**. The type of information that you can only obtain by working in the industry and keeping an open eye. I would not have learned how crucial it is to seize opportunities or how to provide value to your team without experience. That’s the most important part of my work term, and of coop in general.
 
-I’m excited to take what I’ve learned during my work term to my academics. I already realize how many opportunities I have to grow, it’s just a matter of acting on them. Nonetheless, I can’t wait for my next work term, I’m eager to improve more than I have in my previous work term.
+I’m excited to take what I’ve learned during my work term to my academics. I already realize how many opportunities I have to grow. I can’t wait to improve more in my next work term.
 
 # Acknowledgements
 
