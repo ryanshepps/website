@@ -50,6 +50,8 @@ Git[5] has a cool feature that shows who wrote each line of code and how long ag
 
 [Insert picture showing line of code and git blame alongside it].
 
+`console.log(';)'); You, 2 months ago - commit message here`
+
 Thinking about where I can create some infrastructure, I come across code formatting. ESLint is a tool that automatically formats code and warns of language anti-patterns. Enforcing the same format makes the code base easier to read. Imagine a textbook that has different writing style throughout. Additionally, the less time developers spend reading, the more time they can spend writing. Implementing a linter on my current project would be a great idea!
 
 I complete this goal by creating a linting configuration file that tells ESLint how I want the code to be formatted. I carefully configure rules and include why rules are enforced. I want future developers to be able to make informed decisions on code enforcement. I write a BASH script that checks for linting errors before committing code to the code base. Lastly, I include a step in the pipeline that checks whether code is linted or not. The pull request takes 6 iterations before it’s finally committed to the code base and is there forever.
@@ -71,7 +73,48 @@ It’s clear to me that nobody always gets their commit history right the first 
 `alias`
 
 - I use git aliases to visually show code differences on the screen that I make commit messages. Now I can see exactly what I’m committing has I’m writing the commit message.
-- [Insert picture of the vim commit message screen].
+
+```
+update content styles
+
+inline and block code now look more similar
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch documentation-page
+# Your branch is up to date with 'origin/documentation-page'.
+#
+# Changes to be committed:
+#   modified:   assets/css/content.css
+#
+# Changes not staged for commit:
+#   modified:   content/coop_work_reports/valueconnect.md
+#   modified:   pages/documentation/_section/_slug.vue
+#
+# ------------------------ >8 ------------------------
+# Do not modify or remove the line above.
+# Everything below it will be ignored.
+diff --git a/assets/css/content.css b/assets/css/content.css
+index c0f8fe6..67ad0ed 100644
+--- a/assets/css/content.css
++++ b/assets/css/content.css
+@@ -36,10 +36,13 @@
+     font-size: 1.05em;
+ }
+ 
+-.nuxt-content code {
++.nuxt-content code, .nuxt-content pre code span {
+     font-size: 1rem;
+-    background-color: var(--codeBackground);
++    background-color: #f5f2f0;
++    font-family: 'JetBrains';
++}
++
++.nuxt-content p code {
+     padding: 3px;
+-    border-radius: 5px;
+ }
+```
 
 `rebase`
 
@@ -105,7 +148,15 @@ This goal is currently in progress. There is a pull request out for it that is w
 
 My team hosts a book club where we read Clean Code by Robert Martin to help develop our skills at work. In this book, I learn about wrapping third party code with your own code. The most fascinating reason why you should do this, is because if you ever need to replace third-party code (sometimes libraries get deprecated, or the library is not performing as well as one wants), you only need to change the code in file that wraps the third-party code. Better yet, you know exactly what the new library you’re implementing needs to do because the functions that wrapped the last library give you context!
 
-[Insert picture of wrapper for in app purchases].
+```javascript
+const cleanPreviousTransactions = () => {
+  if (Platform.OS === 'android') {
+    RNIap.flushFailedPurchasesCachedAsPendingAndroid();
+  } else if (Platform.OS === 'ios') {
+    RNIap.clearTransactionIOS();
+  }
+};
+```
 
 I really want to try this out with with the mobile app. We’re currently using a library called Sentry. It’s a powerful logging solution, but it’s not properly set up and our implementation is all over the place. My plan for completing this goal goes like this: See where we can improve on our current use of Sentry. Write some documentation to standardize the use of logging. Create a wrapper that wraps the Sentry library calls using the documentation.
 
