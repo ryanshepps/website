@@ -1,4 +1,4 @@
 ---
 title: Introduction
 ---
-I'm a coop student at the University of Guelph studying Computer Science.
+Welcome! I’m a third-year coop student at the University of Guelph studying Computer Science. I’m coordinated, a leader and a trendsetter. I’m good at implementing solutions for processes that can be done better.
