@@ -36,10 +36,13 @@
     font-size: 1.05em;
 }
 
-.nuxt-content code {
+.nuxt-content code, .nuxt-content pre code span {
     font-size: 1rem;
-    background-color: var(--codeBackground);
+    background-color: #f5f2f0;
+    font-family: 'JetBrains';
+}
+
+.nuxt-content p code {
     padding: 3px;
-    border-radius: 5px;
 }
 
