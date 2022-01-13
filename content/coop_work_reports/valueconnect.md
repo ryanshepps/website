@@ -6,8 +6,6 @@ title: S21/F21 Work Term Report
 
 # Value Connect
 
-![Value Connect Logo](../../assets/img/content/valueconnect/valueconnectlogo.png)
-
 As part of my first coop work term, I’ve been working full-time with Value Connect.
 
 Value Connect is a property appraisal marketplace that’s changing the way everyone feels about appraisals. Today’s property appraisals are mostly offline. They include frustrating back-and-forth and mundane data re-entry. We’re saving underwriters 85% of the average time spent on each appraisal by making them ridiculously simple and efficient.
