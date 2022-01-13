@@ -46,7 +46,6 @@ It’s here that I learn about Cross Site Request Forgery(XSRF) and how attacker
 
 Git[5] has a cool feature that shows who wrote each line of code and how long ago it was changed. In Value Connect’s code base, some lines have not been changed in five years. It’s awesome that developers can visibly see who implemented what infrastructure. How can I create infrastructure that other developers will see?
 
-[Insert picture showing line of code and git blame alongside it].
 
 `console.log(';)'); You, 2 months ago - commit message here`
 
