@@ -8,7 +8,7 @@ title: S21/F21 Work Term Report
 
 As part of my first coop work term, I’ve been working full-time with Value Connect.
 
-Value Connect is a property appraisal marketplace that’s changing the way everyone feels about appraisals. Today’s property appraisals are mostly offline. They include frustrating back-and-forth and mundane data re-entry. We’re saving underwriters 85% of the average time spent on each appraisal by making them ridiculously simple and efficient.
+Value Connect is a property appraisal marketplace that’s changing the way everyone feels about appraisals. Today’s property appraisals are mostly offline. They include frustrating back-and-forth and mundane data re-entry. We’re saving underwriters [85%](https://www.valueconnect.ca/) of the average time spent on each appraisal by making them ridiculously simple and efficient.
 
 I chose Value Connect because I see opportunity. There is opportunity in getting to talk to my CEO every day, being an integral part of creating my team’s culture and making decisions for the foundation of the company. There is ample opportunity here, and I’m thrilled to be a part of it.
 
@@ -28,19 +28,19 @@ I’m proud to say that I’m a part of fostering a culture that does not need a
 
 ## Create a Pull Request for an Issue Related to the Back-End ✅
 
-**Technology**: Java, Spring Boot, Spring Security, Cross Site Request Forgery.
+**Technology**: Java, [Spring](https://spring.io/why-spring), [Spring Security](https://spring.io/projects/spring-security), Cross Site Request Forgery.
 
 **Skills**: Initiative, Problem Solving.
 
 While I work on the new front-end, the rest of the team tackles the back-end. The work that I am doing may make an impact months from the time that I write it. I see back-end bug fixes move into production every other day. I want to make an impact on the company as soon as possible, and the fastest way to do that is by working on an issue related to the back-end.
 
-I see my first opportunity when working on the mobile inspection tool. There is an issue when making a request to register a mobile appraiser. I spend a couple hours figuring out the best way to solve the problem by studying how the system handles web requests. I learn a lot about professional Java code and the Spring framework, but it’s not enough to solve the issue. I employ the help of a co-worker who points me in the direction of a Spring project called “Spring Security”.
+I see my first opportunity when working on the mobile inspection tool. There is an issue when making a request to register a mobile appraiser. I spend a couple hours figuring out the best way to solve the problem by studying how the system handles web requests. I learn a lot about professional Java code and the [Spring](https://spring.io/why-spring) framework, but it’s not enough to solve the issue. I employ the help of a co-worker who points me in the direction of a Spring project called [Spring Security](https://spring.io/projects/spring-security).
 
 It’s here that I learn about Cross Site Request Forgery(XSRF) and how attackers can leverage data from a different browser window to make a web request on the user’s behalf. Spring Security enables XSRF protections by default for each web request. Fortunately, XSRF is only really possible on a web browser. I make a pull request that disables XSRF protections for our mobile endpoint. My first goal is complete.
 
 ## Add a Linter to the Front-End Build Process ✅
 
-**Technology**: ESLint, BASH, Pipelines.
+**Technology**: [ESLint](https://eslint.org/docs/user-guide/getting-started), BASH, Pipelines.
 
 **Skills**: Creativity.
 
@@ -48,19 +48,19 @@ It’s here that I learn about Cross Site Request Forgery(XSRF) and how attacker
 
 `console.log(';)'); You, 2 months ago - commit message here`
 
-Thinking about where I can create some infrastructure, I come across code formatting. ESLint is a tool that automatically formats code and warns of language anti-patterns. Enforcing the same format makes the code base easier to read. Imagine a textbook that has different writing style throughout. Additionally, the less time developers spend reading, the more time they can spend writing. Implementing a linter on my current project would be a great idea!
+Thinking about where I can create some infrastructure, I come across code formatting. [ESLint](https://eslint.org/docs/user-guide/getting-started) is a tool that automatically formats code and warns of language anti-patterns. Enforcing the same format makes the code base easier to read. Imagine a textbook that has different writing style throughout. Additionally, the less time developers spend reading, the more time they can spend writing. Implementing a linter on my current project would be a great idea!
 
 I complete this goal by creating a linting configuration file that tells ESLint how I want the code to be formatted. I carefully configure rules and include why rules are enforced. I want future developers to be able to make informed decisions on code enforcement. I write a BASH script that checks for linting errors before committing code to the code base. Lastly, I include a step in the pipeline that checks whether code is linted or not. The pull request takes 6 iterations before it’s finally committed to the code base and is there forever.
 
 ## Have a Cleaner Commit History ✅
 
-**Technology**: Git.
+**Technology**: [Git](https://www.atlassian.com/git/tutorials/what-is-git).
 
 **Skills**: Communication, Writing.
 
 20% of my time reading code is glancing over the lines that my predecessor’s wrote. The other 80% is looking at the commit history wondering what on earth they were thinking. Commit history *should* accompany code changes with why a change is being made
 
-It’s clear to me that nobody always gets their commit history right the first time. In fact, getting commit history wrong is so common that git provides a suite of tools to edit commit history. Over the next couple months, I spend extra time becoming more knowledgeable on git. Here is a list of tools that I learned to complete this goal:
+It’s clear to me that nobody always gets their commit history right the first time. In fact, getting commit history wrong is so common that [Git](https://www.atlassian.com/git/tutorials/what-is-git) provides a suite of tools to edit commit history. Over the next couple months, I spend extra time becoming more knowledgeable on git. Here is a list of tools that I learned to complete this goal:
 
 `reset`
 
@@ -124,7 +124,7 @@ index c0f8fe6..67ad0ed 100644
 
 ## Add Linting to the Mobile App Pipeline ⚠️ 
 
-**Technology**: ESLint, BASH, Pipelines.
+**Technology**: [ESLint](https://eslint.org/docs/user-guide/getting-started), BASH, Pipelines.
 
 **Skills**: Planning, Problem Solving.
 
@@ -138,7 +138,7 @@ This goal is currently in progress. There is a pull request out for it that is w
 
 ## Successfully set up Logging in the Mobile App. ❌
 
-**Technology**: Sentry.
+**Technology**: [Sentry](https://docs.sentry.io/platforms/javascript/).
 
 **Skills**: Creativity, Organization.
 
@@ -160,13 +160,13 @@ Start ups are very fast paced. Before I knew it, I get moved to a new project an
 
 ## Add Integration Tests to the Mobile App. ❌
 
-**Technology**: [Detox](https://github.com/wix/Detox). Pipelines, React Native.
+**Technology**: [Detox](https://github.com/wix/Detox), Pipelines, [React Native](https://reactnative.dev/docs/getting-started).
 
 **Skills**: 
 
 There are already a fair amount of unit tests in the mobile app, but there are no integration tests. Time and time again, we’re about to release a new version of the app, but someone finds an issue in an obscure area. The culprit? A code change on a completely different side of the app. Unit tests are great for testing isolated parts of your code base. Integration tests make sure that those isolated parts are working in cohesion with each other.
 
-The next step to catching bugs in the mobile app is to add integrations tests. Once I was browsing some open source code to check out how they do things in react-native. I came across this cool integration test library called Detox. It looks awesome, has pipeline capabilities, and works with React Native.
+The next step to catching bugs in the mobile app is to add integrations tests. Once I was browsing some open source code to check out how they do things in react-native. I came across this cool integration test library called Detox. It looks awesome, has pipeline capabilities, and works with [React Native](https://reactnative.dev/docs/getting-started).
 
 As with the last goal, I am unable to complete this goal. I see it as a side-effect of my opportunity to work in this field. It’s fast paced. I’m not going to waste time dwelling on my failure, rather I’ve already developed goals for the new project that I’m working on.
 
