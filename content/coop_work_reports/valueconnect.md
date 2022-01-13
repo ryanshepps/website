@@ -136,7 +136,7 @@ During this work term, I’m taking Systems Programming (CIS\*3050) which has a 
 
 This goal is currently in progress. There is a pull request out for it that is waiting to be reviewed.
 
-## Successfully set up Logging in the Mobile App. ❌
+## Successfully set up Logging in the Mobile App ❌
 
 **Technology**: [Sentry](https://docs.sentry.io/platforms/javascript/).
 
@@ -158,7 +158,7 @@ I really want to try this out with with the mobile app. We’re currently using 
 
 Start ups are very fast paced. Before I knew it, I get moved to a new project and am no longer working on the mobile app. I am unsuccessful in completing this goal.
 
-## Add Integration Tests to the Mobile App. ❌
+## Add Integration Tests to the Mobile App ❌
 
 **Technology**: [Detox](https://github.com/wix/Detox), Pipelines, [React Native](https://reactnative.dev/docs/getting-started).
 
