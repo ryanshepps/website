@@ -47,9 +47,9 @@
         <section>
             <div
                 id="about-section"
-                class="content-container">
-                <div>
-                    <h3>Start building a dev team that fights for the health of your codebase</h3>
+                class="content-container third-section">
+                <div class="text-container">
+                    <h3>Start building a team that does things right</h3>
                     <p>I'm quick to install and easy to get started</p>
                 </div>
                 <TouchableHighlight href="mailto: ryansheppardd@gmail.com">
@@ -120,6 +120,10 @@ img {
     margin: 10px;
 
     white-space: nowrap;
+}
+
+.third-section .text-container {
+    margin-right: 40px;
 }
 </style>
 
