@@ -28,7 +28,6 @@ export default {
 .title {
     display: inline-block;
     color: var(--defaultTextColor);
-    font-weight: bold;
     text-decoration: none;
     margin: 5px 0;
 }
