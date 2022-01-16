@@ -13,7 +13,7 @@ export default {
     props: {
         href: {
             type: String,
-            default: '/',
+            default: 'javascript:void(0)',
         },
 
         newTab: {
