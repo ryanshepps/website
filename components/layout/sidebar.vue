@@ -1,5 +1,7 @@
 <template>
-    <div id="sidebar">
+    <div
+        id="sidebar"
+        :class="{hide: !sidebarOpen}">
         <div id="sidebar-content">
             <LayoutSidebarTitle 
                 v-for="article in rootArticles"
@@ -15,11 +17,15 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+import { mapState, mapGetters } from 'vuex';
 import { getArticleLink } from '../../utilities/documentation.js';
 
 export default {
     computed: {
+        ...mapState({
+            sidebarOpen: state => state.sidebarOpen,
+        }),
+
         ...mapGetters({
             rootArticles: 'documentation/rootArticles',
             folders: 'documentation/documentationFolders',
@@ -39,6 +45,10 @@ export default {
     position: fixed;
     height: 100%;
     width: calc((100% - var(--defaultViewWidth)) / 2);
+}
+
+.hide {
+    display: none;
 }
 
 #sidebar-content {
