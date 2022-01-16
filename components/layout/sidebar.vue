@@ -15,17 +15,15 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 import { getArticleLink } from '../../utilities/documentation.js';
 
 export default {
     computed: {
-        folders() {
-            return this.$store.getters.documentationFolders;
-        },
-
-        rootArticles() {
-            return this.$store.getters.rootArticles;
-        },
+        ...mapGetters({
+            rootArticles: 'documentation/rootArticles',
+            folders: 'documentation/documentationFolders',
+        }),
     },
 
     methods: {

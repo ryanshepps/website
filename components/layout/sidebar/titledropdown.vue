@@ -5,7 +5,7 @@
         </div>
         <div :class="[{ 'hidden': closed }]">
             <TouchableHighlight
-                v-for="article in articles"
+                v-for="article in articles(folderName)"
                 :key="article.path">
                 <LayoutSidebarLink 
                     :to="getArticleLink(article.path)"
@@ -17,6 +17,7 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 import { getArticleLink, formatFolderName } from '../../../utilities/documentation.js';
 
 export default {
@@ -34,9 +35,9 @@ export default {
     },
 
     computed: {
-        articles() {
-            return this.$store.getters.articlesInFolder(this.folderName);
-        },
+        ...mapGetters({
+            articles: 'documentation/articlesInFolder',
+        }),
     },
 
     methods: {
