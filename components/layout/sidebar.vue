@@ -44,7 +44,9 @@ export default {
 #sidebar {
     position: fixed;
     height: 100%;
-    width: calc((100% - var(--defaultViewWidth)) / 2);
+    width: 300px;
+    resize: none;
+    background-color: var(--defaultBackgroundColor);
 }
 
 .hide {
