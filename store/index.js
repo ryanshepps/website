@@ -3,6 +3,7 @@ import { getFolderNameFromPath } from '~/utilities/documentation.js';
 import { exists } from '~/utilities/array.js';
 
 export const state = () => ({
+    showHamburger: false,
     sidebarOpen: true,
 });
 
@@ -13,6 +14,10 @@ export const mutations = {
 
     toggleSidebar(state) {
         state.sidebarOpen = !state.sidebarOpen;
+    },
+    
+    showHamburger(state, showHamburger) {
+        state.showHamburger = showHamburger;
     },
 }
 

@@ -13,4 +13,7 @@ export default {
         '@/assets/css/fonts.css',
         '@/assets/css/content.css',
     ],
+    router: {
+        middleware: 'showHamburger'
+    },
 };

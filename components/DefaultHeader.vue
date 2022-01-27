@@ -2,6 +2,7 @@
     <div id="default-header">
         <div
             id="hamburger-container"
+            :class="{'hide-hamburger': !showHamburger}"
             @click="toggleSidebar()">
             <TouchableHighlight
                 class="touchable-highlight"
@@ -34,6 +35,12 @@
 import { mapMutations } from 'vuex';
 
 export default {
+    data() {
+        return {
+            showHamburger: this.$store.state.showHamburger,
+        };
+    },
+
     methods: {
         ...mapMutations({
             toggleSidebar: 'toggleSidebar',
@@ -43,12 +50,15 @@ export default {
 </script>
 
 <style scoped>
+.hide-hamburger {
+    display: none;
+}
+
 #default-header {
     display: flex;
 }
 
 #hamburger-container {
-    display: flex;
     align-self: center;
     margin: 0 25px 0 25px;
 }
