@@ -9,8 +9,7 @@
                 :key="article.path">
                 <LayoutSidebarLink 
                     :to="getArticleLink(article.path)"
-                    :text="article.title"
-                    />
+                    :text="article.title" />
             </TouchableHighlight>
         </div>
     </div>

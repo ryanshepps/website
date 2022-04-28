@@ -19,7 +19,9 @@
                     <TouchableHighlight 
                         href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                         new-tab>
-                        <img class="techstack-image" src="~/assets/img/techstack/JavaScript.svg">
+                        <img
+                            class="techstack-image"
+                            src="~/assets/img/techstack/JavaScript.svg">
                     </TouchableHighlight>
                     <TouchableHighlight
                         href="https://reactnative.dev/"
