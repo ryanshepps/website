@@ -5,6 +5,8 @@
     --importantTextColor: #314C92;
     --secondaryColor: #D5DDF1;
     --codeBackground: #E8E8E8;
+
+    --headerHeight: 60px;
 }
 
 .container {
