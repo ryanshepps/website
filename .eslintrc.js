@@ -43,7 +43,7 @@ module.exports = {
 
         'comma-dangle': [
             'error',
-            'always',
+            'always-multiline',
         ],
 
         'eqeqeq': [
@@ -170,7 +170,7 @@ module.exports = {
 
         'vue/comma-dangle': [
             'error',
-            'always',
+            'always-multiline',
         ],
 
         'vue/eqeqeq': [
