@@ -43,7 +43,7 @@ module.exports = {
 
         'comma-dangle': [
             'error',
-            'always',
+            'always-multiline',
         ],
 
         'eqeqeq': [
@@ -170,7 +170,7 @@ module.exports = {
 
         'vue/comma-dangle': [
             'error',
-            'always',
+            'always-multiline',
         ],
 
         'vue/eqeqeq': [
@@ -209,11 +209,19 @@ module.exports = {
         'vue/no-restricted-syntax': 'error',
 
         'vue/require-default-prop': 'error',
+
+        'vue/html-self-closing': 'error',
+
+        'vue/max-attributes-per-line': 'error',
+
+        'vue/attribute-hyphenation': 'error',
+
+        'vue/singleline-html-element-content-newline': 'off',
     },
 
     'overrides': [
         {
-            'files': ['*.vue', ],
+            'files': ['*.vue'],
             'rules': {
                 'max-len': 'off',
             },

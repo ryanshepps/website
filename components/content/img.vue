@@ -1,6 +1,9 @@
 <template>
     <div>
-        <img :src="getSrc()" :width="width" :height="height" />
+        <img
+            :src="getSrc()"
+            :width="width"
+            :height="height">
     </div>
 </template>
 
@@ -14,12 +17,12 @@ export default {
 
         width: {
             type: [String, Number],
-            default: "auto",
+            default: 'auto',
         },
 
         height: {
             type: [String, Number],
-            default: "auto",
+            default: 'auto',
         },
     },
 
@@ -28,5 +31,5 @@ export default {
             return require(`~/assets/img/${this.src}`);
         },
     },
-}
+};
 </script>
