@@ -9,7 +9,7 @@
             <LayoutSidebarTitledropdown
                 v-for="folder in folders"
                 :key="folder"
-                :folderName="folder" />
+                :folder-name="folder" />
         </div>
     </div>
 </template>
@@ -33,7 +33,7 @@ export default {
             return getArticleLink(articlePath);
         },
     },
-}
+};
 </script>
 
 <style scoped>
