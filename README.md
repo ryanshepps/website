@@ -2,6 +2,12 @@
 
 Welcome! This is the remote repository that holds my personal website.
 
+# Features
+
+- Automatic deployment to Google Cloud.
+- Fully customized lint configuration.
+- Automatic lint checks through GitHub workflow.
+
 # Setup
 
 Install Dependencies
