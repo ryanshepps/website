@@ -20,7 +20,7 @@
 <style scoped>
 .content-container {
     display: flex;
-    height: 60px;
+    height: var(--headerHeight);
 }
 
 .touchable-highlight {
