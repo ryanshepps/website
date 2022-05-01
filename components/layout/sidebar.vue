@@ -38,6 +38,8 @@ export default {
 
 <style scoped>
 #sidebar {
+    padding-top: var(--headerHeight);
+    
     position: fixed;
     height: 100%;
     width: calc((100% - var(--defaultViewWidth)) / 2);
