@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <DefaultHeader />
+        <Header />
         <LayoutSidebar />
         <Nuxt />
     </div>
