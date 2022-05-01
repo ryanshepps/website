@@ -27,7 +27,7 @@ export default {
 
 <style scoped>
 .article-container {
-    padding: 1% 0 0 5%;
+    padding: var(--headerHeight) 0 0 5%;
 }
 
 .title {
