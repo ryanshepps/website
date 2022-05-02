@@ -1,14 +1,14 @@
 <template>
-    <div id="about-page">
-        <section>
-            <div class="content-container">
-                <h1 class="text-center">
-                    Ryan Sheppard
-                </h1>
-                <p class="text-center">
-                    I'm a highly motivated software developer who understands collaboration. <b>I'm not afraid to speak my mind when I'm subject to something that could be done better</b>.
-                </p>
-            </div>
+    <div id="index-page">
+
+        <!-- Intro Section -->
+        <section class="content-container">
+            <h1 class="text-center">
+                Ryan Sheppard
+            </h1>
+            <p class="text-center">
+                The human compatible framework helping to build great teams everywhere
+            </p>
         </section>
         <section class="slanted-section">
             <div class="content-container">
@@ -65,7 +65,7 @@
 </template>
 
 <style scoped>
-#about-page {
+#index-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,10 +73,13 @@
 }
 
 section {
+    position: relative;
     width: 60%;
     height: 80vh;
+
     display: flex;
-    position: relative;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #about-section {
