@@ -1,13 +1,15 @@
 <template>
     <div>
         <img
-            :src="getSrc()"
+            :src="getImageSrc(src)"
             :width="width"
             :height="height">
     </div>
 </template>
 
 <script>
+import {getImageSrc} from '~/utilities/images.js';
+
 export default {
     props: {
         src: {
@@ -27,9 +29,7 @@ export default {
     },
 
     methods: {
-        getSrc() {
-            return require(`~/assets/img/${this.src}`);
-        },
+        getImageSrc,
     },
 };
 </script>
