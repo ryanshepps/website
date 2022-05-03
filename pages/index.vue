@@ -10,39 +10,40 @@
                 The human compatible framework helping to build great teams everywhere
             </p>
         </section>
-        <section class="slanted-section">
+
+        <!-- Features Section -->
+        <section id="features-section">
             <div class="content-container">
-                <h1 class="white-text text-center">
-                    My Stack
+                <h1
+                    id="features-title"
+                    class="white-text text-center">
+                    Features
                 </h1>
-                <div id="tech-stack-images">
-                    <TouchableHighlight 
-                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                        new-tab>
-                        <img
-                            class="techstack-image"
-                            src="~/assets/img/techstack/JavaScript.svg">
-                    </TouchableHighlight>
-                    <TouchableHighlight
-                        href="https://reactnative.dev/"
-                        new-tab>
-                        <img src="~/assets/img/techstack/ReactNative.svg">
-                    </TouchableHighlight>
-                    <TouchableHighlight
-                        href="https://vuejs.org/"
-                        new-tab>
-                        <img src="~/assets/img/techstack/Vue.svg">
-                    </TouchableHighlight>
-                    <TouchableHighlight
-                        href="https://nuxtjs.org/"
-                        new-tab>
-                        <img src="~/assets/img/techstack/Nuxt.svg">
-                    </TouchableHighlight>
-                    <TouchableHighlight
-                        href="https://www.amazon.ca/Programming-Language-2nd-Brian-Kernighan/dp/0131103628/ref=sr_1_1?dchild=1&keywords=c+programming+language&qid=1632006279&sr=8-1"
-                        new-tab>
-                        <img src="~/assets/img/techstack/C.svg">
-                    </TouchableHighlight>
+                <div id="features-container">
+                    <Feature
+                        img-src="features/leader.svg"
+                        heading-text="Leader"
+                        sub-text="I'm dedicated to the performance of my team." />
+                    <Feature
+                        img-src="features/teachable.svg"
+                        heading-text="Teachable"
+                        sub-text="I'm always open to suggestions and take criticism constructively." />
+                    <Feature
+                        img-src="features/communicative.svg"
+                        heading-text="Communicative"
+                        sub-text="I'm good at communicating with non-technical shareholders and teammates." />
+                    <Feature
+                        img-src="features/quicklearner.svg"
+                        heading-text="Quick Learner"
+                        sub-text="I've spent lots of time learning how to learn." />
+                    <Feature
+                        img-src="features/adaptable.svg"
+                        heading-text="Adaptable"
+                        sub-text="I'm used to quickly switching contexts. I've manages multiple projects at once." />
+                    <Feature
+                        img-src="features/resilient.svg"
+                        heading-text="Resilient"
+                        sub-text="I fail a lot. But failure makes me learn faster." />
                 </div>
             </div>
         </section>
@@ -88,11 +89,12 @@ section {
     align-items: center;
 }
 
-.slanted-section {
+#features-section {
     width: 100%;
+    height: 900px;
 }
 
-.slanted-section::before {
+#features-section::before {
     content: '';
     position: absolute;
     transform: skewY(-3deg) translateY(0.75em);
@@ -102,14 +104,17 @@ section {
     z-index: -1;
 }
 
-#tech-stack-images {
-    margin: 10px;
-    display: flex;
+#features-title {
+    padding-bottom: 25px;
 }
 
-img {
+#features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
     width: 100%;
-    height: 70%;
+    height: 500px;
 }
 
 .get-started-btn {
