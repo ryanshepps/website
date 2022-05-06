@@ -47,23 +47,42 @@
                 </div>
             </div>
         </section>
-        <section>
+
+        <!-- Showcase Section -->
+        <section id="showcase-section">
+            <h1
+                id="showcase-title"
+                class="text-center">
+                Showcase
+            </h1>
+            <p class="text-center">
+                Check out some other personal projects powered by me <NuxtLink to="/405">here</NuxtLink>
+            </p>
             <div
-                id="about-section"
-                class="content-container third-section">
-                <div class="text-container">
-                    <h3>Start building a team that does things right</h3>
-                    <p>I'm quick to install and easy to get started</p>
-                </div>
-                <TouchableHighlight href="mailto: ryansheppardd@gmail.com">
-                    <p class="get-started-btn">
-                        Get Started
-                    </p>
-                </TouchableHighlight>
+                id="showcases"
+                class="content-container">
+                <Showcase
+                    img-src="showcase/personal-website.png"
+                    title="Personal Website"
+                    short-description="I'm most proud of this website. It's taken me a lot of work to get it to where I want. Luckily, it's here! Welcome.">
+                    <img :src="getImageSrc('showcase/stack/nuxt.svg')">
+                    <img :src="getImageSrc('showcase/stack/vue.svg')">
+                    <img :src="getImageSrc('showcase/stack/google-cloud.svg')">
+                </Showcase>
             </div>
         </section>
     </div>
 </template>
+
+<script>
+import {getImageSrc} from '~/utilities/images.js';
+
+export default {
+    methods: {
+        getImageSrc,
+    },
+};
+</script>
 
 <style scoped>
 #index-page {
@@ -81,12 +100,6 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: column;
-}
-
-#about-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #features-section {
@@ -117,23 +130,17 @@ section {
     height: 500px;
 }
 
-.get-started-btn {
-    color: var(--importantTextColor);
-    background-color: var(--secondaryColor);
-    
-    font-weight: 900;
-    text-decoration: none;
-
-    border: 4px var(--importantTextColor) solid;
-    border-radius: 8px;
-    padding: 10px 20px;
-    margin: 10px;
-
-    white-space: nowrap;
+#showcase-title {
+    padding-top: 100px;
 }
 
-.third-section .text-container {
-    margin-right: 40px;
+#showcases {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    font-weight: bold;
 }
 </style>
 
