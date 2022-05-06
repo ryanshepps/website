@@ -33,6 +33,11 @@ p {
     margin: 0;
 }
 
+a {
+    color: var(--importantTextColor);
+    text-decoration: none;
+}
+
 b {
     font-weight: 700;
 }
