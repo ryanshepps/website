@@ -71,6 +71,53 @@
                 </Showcase>
             </div>
         </section>
+
+        <!-- Get Started Section -->
+        <section id="get-started-section">
+            <img
+                id="get-started-bg-bubbles"
+                :src="getImageSrc('get-started/bubbles.svg')">
+            <div id="get-started-bg">
+                <div class="content-container">
+                    <h1
+                        id="get-started-title"
+                        class="white-text text-center">
+                        Get Started
+                    </h1>
+                    <GetStartedAction
+                        img-src="get-started/installation.svg"
+                        title="Installation">
+                        Visit my
+                        <NuxtLink
+                            class="white-text"
+                            to="/405">
+                            installation page
+                        </NuxtLink>
+                        for more information on how you can get me started in your team.
+                    </GetStartedAction>
+                    <GetStartedAction
+                        img-src="get-started/documentation.svg"
+                        title="Documentation">
+                        Looking to get to know me more? Check out my 
+                        <NuxtLink
+                            class="white-text"
+                            to="/documentation">
+                            documentation.
+                        </NuxtLink>
+                    </GetStartedAction>
+                    <GetStartedAction
+                        img-src="get-started/contact.svg"
+                        title="Contact">
+                        I'm always down to chat. Let's grab a coffee some time! You can shoot me an email 
+                        <a
+                            class="white-text"
+                            href="mailto:ryansheppardd@gmail.com">
+                            here.
+                        </a>
+                    </GetStartedAction>
+                </div>
+            </div>
+        </section>
     </div>
 </template>
 
@@ -130,7 +177,7 @@ section {
     height: 500px;
 }
 
-#showcase-title {
+#showcase-title, #get-started-title {
     padding-top: 100px;
 }
 
@@ -141,6 +188,31 @@ section {
 
 a {
     font-weight: bold;
+}
+
+#get-started-section {
+    width: 100%;
+    justify-content: flex-start;
+}
+
+#get-started-bg-bubbles {
+    width: 100%;
+    max-width: var(--defaultViewWidth);
+    margin: 0 auto -3px auto;
+}
+
+#get-started-bg {
+    background-color: var(--importantTextColor);
+    width: 100%;
+}
+
+#get-started-section .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 700px;
 }
 </style>
 
