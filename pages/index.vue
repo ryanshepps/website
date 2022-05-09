@@ -2,7 +2,9 @@
     <div id="index-page">
 
         <!-- Intro Section -->
-        <section class="content-container">
+        <section
+            id="intro-section"
+            class="content-container">
             <h1 class="text-center">
                 Ryan Sheppard
             </h1>
@@ -142,16 +144,18 @@ export default {
 section {
     position: relative;
     width: 60%;
-    height: 80vh;
 
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
+#intro-section, #showcase-section, #features-section {
+    height: 80vh;
+}
+
 #features-section {
     width: 100%;
-    height: 900px;
 }
 
 #features-section::before {
@@ -204,6 +208,7 @@ a {
 #get-started-bg {
     background-color: var(--importantTextColor);
     width: 100%;
+    height: 100%;
 }
 
 #get-started-section .content-container {
