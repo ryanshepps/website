@@ -16,11 +16,11 @@
         <!-- Features Section -->
         <section id="features-section">
             <div class="content-container">
-                <h1
+                <h2
                     id="features-title"
                     class="white-text text-center">
                     Features
-                </h1>
+                </h2>
                 <div id="features-container">
                     <Feature
                         img-src="features/leader.svg"
@@ -52,11 +52,11 @@
 
         <!-- Showcase Section -->
         <section id="showcase-section">
-            <h1
+            <h2
                 id="showcase-title"
                 class="text-center">
                 Showcase
-            </h1>
+            </h2>
             <p class="text-center">
                 Check out some other personal projects powered by me <NuxtLink to="/405">here</NuxtLink>
             </p>
@@ -81,11 +81,11 @@
                 :src="getImageSrc('get-started/bubbles.svg')">
             <div id="get-started-bg">
                 <div class="content-container">
-                    <h1
+                    <h2
                         id="get-started-title"
                         class="white-text text-center">
                         Get Started
-                    </h1>
+                    </h2>
                     <GetStartedAction
                         img-src="get-started/installation.svg"
                         title="Installation">
