@@ -13,4 +13,9 @@ export default {
         '@/assets/css/fonts.css',
         '@/assets/css/content.css',
     ],
+    head: {
+        link: [
+            { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
+        ],
+    },
 };
