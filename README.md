@@ -4,9 +4,9 @@ Welcome! This is the remote repository that holds my personal website.
 
 # Features
 
-- Automatic deployment to Google Cloud.
+- Continuous integration through GitHub Actions.
 - Fully customized lint configuration.
-- Automatic lint checks through GitHub workflow.
+- Continuous deployment from GitHub Actions to Google Cloud.
 
 # Setup
 
