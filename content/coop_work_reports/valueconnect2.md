@@ -2,6 +2,8 @@
 title: S22 Work Term Report
 ---
 
+<content-img src="content/valueconnect2/valueconnectteam.jpg" width="100%"></content-img>
+
 Some things have changed, and some things have remained the same compared to my [last coop work term](https://ryansheppard.tech/documentation/coop_work_reports/valueconnect).
 
 # Information About the Employer
